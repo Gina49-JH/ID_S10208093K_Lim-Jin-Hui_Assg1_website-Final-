@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+    }
+   /* Sidebar CSS*/
+    .sidebar {
+        margin: 0;
+        padding:0;
+        width: 200px;
+        background-color: orange;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }          
+
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 16px;
+        padding-bottom: 100px;
+        text-decoration: none;
+    }
+ 
+    .sidebar a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 200px;
+        text-align: left;
+    }
+
+    .content-skills {
+        float: left;
+        width: 50%;
+    }
+
+    h1{
+        display: inline;
+        width: 50%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    div.content-intro img{
+        margin-left:85px;
+    }
+    div.content-intro p{
+        text-align: justify;
+        max-width: 100%;
+        left:50px;
+    }
+   
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="Project.html">Project</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <hr>
+    <h1>Education</h1>
+    <hr>
+    <div class ="row">
+        <div class = "content-skills">
+            <img src = "Resources/Education/dlss.jpg">
+            <p>De La Salle Primary School</p>
+            <p>Studied From <br> 2008 - 2013</p>
+        </div>
+        <div class = "content-skills">
+            <img src = "Resources/Education/twss1.jpg">
+            <p>Teck Whye Secondary School</p>
+            <p>Studied From <br>2013 - 2017</p>
+        </div>
+    </div>
+    <hr>
+    <div class ="row">
+        <div class = "content-skills">
+            <img src = "Resources/Education/ite.jpg">
+            <p>ITE College West</p>
+            <p>Studied From <br> 2018 - 2020</p>
+        </div>
+        <div class = "content-skills">
+            <img src = "Resources/Education/np.jpg">
+            <p>Ngee Ann Polytechnic</p>
+            <p>Studied From<br> 2020 - 2023</p>
+        </div>
+    </div>
+    <hr>
+    <h1>Award</h1>
+    <hr>
+    <div class ="row">
+        <div class = "content-skills">
+            <img src = "Resources/Education/ite.jpg">
+            <p>ITE College West</p>
+            <p>Studied From <br> 2018 - 2020</p>
+        </div>
+        <div class = "content-skills">
+            <img src = "Resources/Education/np.jpg">
+            <p>Ngee Ann Polytechnic</p>
+            <p>Studied From<br> 2020 - 2023</p>
+        </div>
+    </div>
+    <hr>
+    <br>
+    
+</div>
+
+</body>
+</html>
