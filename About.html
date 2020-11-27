@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+    }
+   /* Sidebar CSS*/
+    .sidebar {
+        margin: 0;
+        padding:0;
+        width: 200px;
+        background-color: orange;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }          
+
+    .sidebar a {
+        display: block;
+        color: white;
+        padding: 16px;
+        padding-bottom: 100px;
+        text-decoration: none;
+    }
+ 
+    .sidebar a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 200px;
+        text-align: left;
+    }
+
+    div.content-intro{
+        float: left;
+        padding:0;
+        display:flex;
+        flex-flow: wrap;
+    }
+
+    div.content-intro p{
+        text-align:justify;
+        margin-right: 60px;
+        width: 100%;
+    }
+
+    .content-skills {
+        float: left;
+        width: 50%;
+    }
+
+    h1{
+        display: inline;
+        width: 50%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    div.content-intro img{
+        margin-left:85px;
+    }
+    div.content-intro p{
+        text-align: justify;
+        max-width: 100%;
+        left:50px;
+    }
+   
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="Project.html">Project</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <br>
+    <h1>About Me</h1>
+    <hr>
+    <div class ="content-intro">
+        <img src ="Resources/About/profile.jpg">
+        <p>Hi I am Lim Jin Hui, graduated from ITE College West and currently study Inforcomm Technology in Year 1
+        at Ngee Ann Polytechnic aiming to pursue a career in IT Industry.</p>
+    </div>
+    <a href="Resources/About/Resume.docx">Resume</a>
+    <hr>
+    <h1 style="float: left;">Skills</h1>
+    <h1 style="float: right;">Language</h1>
+    <hr />
+    <div class ="row">
+        <div class = "content-skills">
+            <ul>
+                <li> Programming - Python , CSS, HTML , C++ and Java</li>
+                <li> Virtualization - Vmware Workstation </li>
+                <li> Microsoft Office - Word, Excel , Powerpoint </li>
+                <li> Cisco Packet Tracer</li>
+            </ul>
+        </div>
+        <div class = "content-skills">
+            <ul>
+                <li> English</li>
+                <li> Chinese </li>
+            </ul>
+        </div>    
+    </div>
+    <hr>
+    <h1 style="float: left;">Interest</h1>
+    <h1 style="float: right;">Hobbies</h1>
+    <hr>
+    <div class ="row">
+        <div class = "content-skills">
+            <ul>
+                <li> Interest In Programming Language </li>
+                <li> Interest in Artificial Intelligence (AI) and Virtual Reality(VR) </li>
+            </ul>
+        </div>
+        <div class = "content-skills">
+            <ul>
+                <li> Watching TV Shows - Anime, Investigation, Documentary Shows </li>
+                <li> Photography </li>
+                <li> Listening to Music</li>
+            </ul>
+        </div>    
+    </div>
+    <hr>
+    <br>
+    
+</div>
+
+</body>
+</html>
